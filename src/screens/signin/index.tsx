@@ -7,10 +7,7 @@ import { ButtonIcon } from '../../components/Buttonicon';
 export function SignIn() {
     return (
         <View style={styles.container}>
-            <StatusBar 
-                barStyle='light-content'
-                backgroundColor='transparent'
-                translucent/>
+
             <Image 
                 source={ IllustrationImg }
                 style={styles.image}
@@ -19,9 +16,9 @@ export function SignIn() {
 
             <View style={styles.content}>
                 <Text style={styles.title}>
-                    Organize {`\n`}
-                    suas jogatinas {`\n`}
-                    facilmente {`\n`}
+                    Conecte-se e{`\n`}
+                    Organize suas{`\n`}
+                    jogatinas
                 </Text>
 
                 <Text style={styles.subtitle}>
