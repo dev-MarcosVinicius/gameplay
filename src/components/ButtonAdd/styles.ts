@@ -10,12 +10,5 @@ export const style = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 15
-    },
-    content: {
-        marginTop: 42
-    },
-    matches: {
-        marginTop: 24,
-        marginLeft: 24
     }
 });

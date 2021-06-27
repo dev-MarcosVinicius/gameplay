@@ -3,7 +3,7 @@ import { Image } from "react-native";
 import { style } from "./styles";
 
 export function GuildIcon() {
-    const uri = 'https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2020/04/discord-logo-1000x563.jpg';
+    const uri = 'https://www.creativefreedom.co.uk/wp-content/uploads/2016/07/pokemon1.png';
     return (
         <Image 
             source={{ uri }}
