@@ -1,14 +1,34 @@
 import React from "react";
-import { Image } from "react-native";
+import { Image, View } from "react-native";
 import { style } from "./styles";
+import DiscordSvg from "../../assets/discord.svg"
 
-export function GuildIcon() {
-    const uri = 'https://www.creativefreedom.co.uk/wp-content/uploads/2016/07/pokemon1.png';
+const { CNC_IMAGE } = process.env;
+
+type Props = {
+    guildId: string;
+    iconId: string | null;
+}
+
+export function GuildIcon({ guildId, iconId }: Props) {
+    const uri = `${CNC_IMAGE}/icons/${guildId}/${iconId}.png`;
+
     return (
-        <Image 
-            source={{ uri }}
-            style={style.image}
-            resizeMode="cover"
-        />
+        <View style={style.container}>
+            {
+                iconId
+                ?
+                <Image 
+                    source={{ uri }}
+                    style={style.image}
+                    resizeMode="cover"
+                />
+                :
+                <DiscordSvg
+                    width={40}
+                    height={40}
+                />
+            }
+        </View>
     );
 }
